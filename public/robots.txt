@@ -1,5 +1,6 @@
 # robots.txt for nexarq documentation
 # Allow all search engines to crawl the site
+# Last updated: 2026-05-03
 
 User-agent: *
 Allow: /
