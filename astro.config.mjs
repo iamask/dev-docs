@@ -108,12 +108,21 @@ export default defineConfig({
 		sitemap({
 			filter: (page) => !page.includes('/404'),
 			customPages: [],
+			entryLimit: 10000,
 		}),
 	],
 
 	adapter: cloudflare({
 		platformProxy: {
 			enabled: true
+		},
+		routes: {
+			extend: {
+				exclude: [
+					{ pattern: '/sitemap-index.xml' },
+					{ pattern: '/sitemap-0.xml' },
+				],
+			},
 		},
 	}),
 });

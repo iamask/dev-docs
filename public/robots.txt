@@ -6,7 +6,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://docs.nexarq.ai/sitemap-index.xml
-Sitemap: https://docs.nexarq.ai/sitemap-0.xml
 
 # Crawl delay (optional - helps prevent server overload)
 Crawl-delay: 1
